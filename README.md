@@ -62,3 +62,12 @@ bundle install
 rails db:create
 rails db:migrate
 ```
+
+## Como contribuir
+
+1. Fazer um fork do repositório
+2. Criar uma branch com a feature ou correção de bug (`git checkout -b feature/nome-da-feature`)
+3. Commitar as mudanças (`git commit -m 'Adiciona uma feature'`)
+4. Dar push na branch (`git push origin feature/nome-da-feature`)
+5. Abrir um Pull Request
+6. Esperar a revisão e aprovação do Pull Request (por Gabriel Pedot Reis)
