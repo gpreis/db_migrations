@@ -22,6 +22,18 @@ Banco de dados leve, utilizado para desenvolvimento e testes.
 Utilizado por ser o padrão do Rails, não necessitando de configuração adicional.
 [Site](https://sqlite.org/)
 
+## Gitflow
+
+Utilizado Trunk-Based Development para o controlamento de versões
+
+### Branches
+
+- **main**: branch principal
+- **feat/create-table**: branch para criação da tabela *movies* com as colunas id e description (PASSO 1)
+- **feat/add-three-movies**: branch para adicionar três sinopses de filmes na tabela *movies* (PASSO 2)
+- **feat/add-10-movies**: branch para adicionar 2 migrações com 5 sinopses de filmes cada na tabela *movies* (PASSO 3)
+- **feat/update-readme**: branch para atualizar o README
+
 ## Como rodar
 
 ### Instalar ASDF
