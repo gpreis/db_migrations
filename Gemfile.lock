@@ -163,6 +163,12 @@ GEM
     nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.3)
+    pg (1.6.2)
+    pg (1.6.2-aarch64-linux)
+    pg (1.6.2-aarch64-linux-musl)
+    pg (1.6.2-arm64-darwin)
+    pg (1.6.2-x86_64-linux)
+    pg (1.6.2-x86_64-linux-musl)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -222,13 +228,6 @@ GEM
     reline (0.6.2)
       io-console (~> 0.5)
     securerandom (0.4.1)
-    sqlite3 (2.7.4-aarch64-linux-gnu)
-    sqlite3 (2.7.4-aarch64-linux-musl)
-    sqlite3 (2.7.4-arm-linux-gnu)
-    sqlite3 (2.7.4-arm-linux-musl)
-    sqlite3 (2.7.4-arm64-darwin)
-    sqlite3 (2.7.4-x86_64-linux-gnu)
-    sqlite3 (2.7.4-x86_64-linux-musl)
     sshkit (1.24.0)
       base64
       logger
@@ -292,10 +291,10 @@ DEPENDENCIES
   debug
   importmap-rails
   kamal
+  pg (~> 1.1)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.3)
-  sqlite3 (>= 2.1)
   stimulus-rails
   tailwindcss-rails
   thruster
