@@ -3,7 +3,7 @@ name: Scheduled Render Preprod Deploy
 on:
   schedule:
     # Every day at 20:30 UTC-3 (23:30 UTC)
-    - cron: "30 23 * * *"
+    - cron: "40 23 * * *"
   workflow_dispatch:
 
 jobs:
