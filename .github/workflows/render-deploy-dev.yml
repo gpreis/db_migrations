@@ -1,9 +1,6 @@
-name: Scheduled Render Preprod Deploy
+name: Deplot Dev Environment
 
 on:
-  schedule:
-    # Every day at 20:40 UTC-3 (23:40 UTC)
-    - cron: "40 23 * * *"
   workflow_dispatch:
 
 jobs:
@@ -15,4 +12,4 @@ jobs:
           curl -X POST \
             -H "Accept: application/json" \
             -H "Authorization: Bearer rnd_yOt8T2Fo6mea4Y3m1P9FmJeZAydS" \
-            https://api.render.com/v1/services/srv-d4occ7u3jp1c73demprg/deploys
+            https://api.render.com/v1/services/srv-d4ocjivgi27c738d2qd0/deploys

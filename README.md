@@ -1,5 +1,31 @@
 # Trabalho de Migrações
 
+## CI/CD Pipeline
+
+Foi utilizado o [Render](https://render.com/) e o Github Workflow.
+
+### PRODUCTION
+
+Branch: main
+
+Após cada commit, é feito um novo deploy (através do Render) rodando o arquivo `./bin/render-build.sh`.
+
+### PREPROD
+
+Branch: preprod
+
+Todo dia, as 20:40, é realizado a chamada para o deploy da branch preprod.
+O cronjob é feito através do Github Workflow com a action _Scheduled Render Preprod Deploy_ (no arquivo .github/workflows/render-preprod-schedule.yml), ele faz uma chamada usando cron na API do Render solicitando um novo deploy de preprod.
+
+é possível fazer o mesmo manualmente, chamando a action _Scheduled Render Preprod Deploy_ ou fazendo a solicitação diretamente no Render.
+
+### DEV
+
+Branch: dev
+
+Deploy somente manual, podendo ser feito chamando a action _Deplot Dev Environment_ ou fazendo a solicitação diretamente no Render.
+
+
 ## Stack
 
 ### Ruby on Rails
